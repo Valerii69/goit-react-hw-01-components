@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
+// import user from './data/user.json'
 
 export const Profile = ({
   username,
@@ -36,10 +37,10 @@ export const Profile = ({
 };
 
 Profile.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
   username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,   
+  avatar: PropTypes.string.isRequired,
   stats: PropTypes.exact({
     followers: PropTypes.number,
     views: PropTypes.number,

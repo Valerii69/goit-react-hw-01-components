@@ -36,3 +36,4 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired,
     }),
   };
+console.log(Statistics)
