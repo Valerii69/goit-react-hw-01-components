@@ -7,14 +7,14 @@ function getRandomHexColor() {
       .slice(5,8)}`;
   }
 
-export const Statistics = ({ title, stats }) => {
+export const Statistics = ({ title, data }) => {
   return (
     <section className={css.statistics}>
 
       {title && <h2 className={css.title}>{title}</h2>}
 
       <ul className={css.statlist}>
-      {stats.map(({ id, label, percentage }) => (
+      {data.map(({ id, label, percentage }) => (
           <li
             key={id}
             className={css.item}
