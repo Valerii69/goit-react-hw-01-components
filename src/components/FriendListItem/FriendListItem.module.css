@@ -1,7 +1,8 @@
 .item {
   padding: 5px;
   margin: 5px auto;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 20%), 0 1px 1px rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%), 0 1px 1px rgb(0 0 0 / 14%),
+    0 2px 1px -1px rgb(0 0 0 / 12%);
 
   display: flex;
   justify-content: space-between;
@@ -14,9 +15,11 @@
   margin-right: 10px;
   background-color: black;
 }
-.true {
+.online {
+  composes: status;
   background-color: green;
 }
-.false {
+.offline {
+  composes: status;
   background-color: red;
 }
